@@ -1,0 +1,101 @@
+@import 'responsive'
+
+.team
+	margin-bottom: 45px
+
+	&__title
+		font-size: 65px
+		line-height: 1.2
+		color: #000000
+		text-align: center
+		padding-top: 80px
+		padding-bottom: 10px
+		font-family: BerlingskeSerif
+		font-weight: 300
+
+	&__subtitle
+		max-width: 940px
+		font-size: 55px
+		line-height: 1.2
+		color: #000000
+		text-align: center
+		padding-bottom: 65px
+		margin: 0 auto
+		font-family: BerlingskeSerif
+		font-weight: 300
+		+media(md)
+			font-size: 42px
+		+media(sm)
+			font-size: 32px
+			padding-bottom: 40px
+
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+		margin: 0 -35px
+		padding-bottom: 85px
+		+media(md)
+			padding-bottom: 50px
+		+media(sm)
+			margin: 0px
+			padding-bottom: 30px
+		&--recommendation
+			.team__fio
+				font-size: 34px
+
+	&__item	
+		width: calc(100% / 3 - 70px)
+		margin: 0 35px
+		margin-bottom: 65px
+		+media(md)
+			width: calc(100% / 2 - 70px)
+		+media(sm)
+			width: 100%
+			max-width: 450px
+			margin: 0 auto
+			margin-bottom: 45px
+		&:hover .team__details span:after
+			width: 0px
+
+	&__image
+		padding-top: 111%
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center
+		border-radius: 15px
+		margin-bottom: 20px
+
+	&__fio
+		font-size: 30px
+		color: #000000
+		line-height: 1.2
+		text-align: center
+		padding-bottom: 15px
+		font-family: AngleciaProTitle
+		font-weight: 500
+
+	&__details
+		cursor: pointer
+		display: block
+		font-size: 21px
+		color: #747474
+		margin: 0 auto
+		text-align: center
+		background-color: #fff
+		border: none
+		outline: none
+		font-family: AngleciaProTitle
+		font-weight: 500
+		span
+			display: inline-block
+			position: relative
+			padding-bottom: 2px
+			&:after
+				position: absolute
+				content: ' '
+				bottom: -4px
+				left: 0px
+				width: 100%
+				height: 1px
+				background-color: #747474
+				transition: 0.3s width

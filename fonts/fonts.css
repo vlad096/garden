@@ -1,0 +1,98 @@
+@font-face {
+    font-family: "BerlingskeSerif";
+    src: url("BerlingskeSerif-MdItalic.eot");
+    src: url("BerlingskeSerif-MdItalic.eot?#iefix") format("embedded-opentype"),
+    url("BerlingskeSerif-MdItalic.woff") format("woff"),
+    url("BerlingskeSerif-MdItalic.woff2") format("woff2"),
+    url("BerlingskeSerif-MdItalic.ttf") format("truetype"),
+    url('BerlingskeSerif-MdItalic.svg') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BerlingskeSerif";
+    src: url("Berlingske_Serif-DemiBoldld.eot");
+    src: url("BBerlingske_Serif-DemiBold.eot?#iefix") format("embedded-opentype"),
+    url("Berlingske_Serif-DemiBold.woff") format("woff"),
+    url("BBerlingske_Serif-DemiBold.woff2") format("woff2"),
+    url("Berlingske_Serif-DemiBoldemiBold.ttf") format("truetype"),
+    url('Berlingske_Serif-DemiBold.svg') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MuseoSansCyrl";
+    src: url("MuseoSansCyrl100.eot");
+    src: url("MuseoSansCyrl100.eot?#iefix") format("embedded-opentype"),
+    url("MuseoSansCyrl100.woff") format("woff"),
+    url("MuseoSansCyrl100.woff2") format("woff2"),
+    url("MuseoSansCyrl100.ttf") format("truetype"),
+    url('MuseoSansCyrl100.svg') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MuseoSansCyrl";
+    src: url("MuseoSansCyrl300.eot");
+    src: url("MuseoSansCyrl300.eot?#iefix") format("embedded-opentype"),
+    url("MuseoSansCyrl300.woff") format("woff"),
+    url("MuseoSansCyrl300.woff2") format("woff2"),
+    url("MuseoSansCyrl300.ttf") format("truetype"),
+    url('MuseoSansCyrl300.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MuseoSansCyrl";
+    src: url("MuseoSansCyrl700.eot");
+    src: url("MuseoSansCyrl700.eot?#iefix") format("embedded-opentype"),
+    url("MuseoSansCyrl700.woff") format("woff"),
+    url("MuseoSansCyrl700.woff2") format("woff2"),
+    url("MuseoSansCyrl700.ttf") format("truetype"),
+    url('MuseoSansCyrl700.svg') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "AngleciaProTitle";
+    src: url("AngleciaProTitleRegular.eot");
+    src: url("AngleciaProTitleRegular.eot?#iefix") format("embedded-opentype"),
+    url("AngleciaProTitleRegular.woff") format("woff"),
+    url("AngleciaProTitleRegular.woff2") format("woff2"),
+    url("AngleciaProTitleRegular.ttf") format("truetype"),
+    url('AngleciaProTitleRegular.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: "AngleciaProTitle";
+    src: url("AngleciaProTitleMediumItalic.eot");
+    src: url("AngleciaProTitleMediumItalic.eot?#iefix") format("embedded-opentype"),
+    url("AngleciaProTitleMediumItalic.woff") format("woff"),
+    url("AngleciaProTitleRegAngleciaProTitleMediumItalic.woff2") format("woff2"),
+    url("AngleciaProTitleMediumItalic.ttf") format("truetype"),
+    url('AngleciaProTitleMediumItalic.svg') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "MyriadHebrew-Regular";
+    src: url("MyriadHebrew-Regular.eot");
+    src: url("MyriadHebrew-Regular.eot?#iefix") format("embedded-opentype"),
+    url("MyriadHebrew-Regular.woff") format("woff"),
+    url("MyriadHebrew-Regular.woff2") format("woff2"),
+    url("MyriadHebrew-Regular.ttf") format("truetype"),
+    url('MyriadHebrew-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

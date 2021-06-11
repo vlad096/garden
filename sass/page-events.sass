@@ -1,0 +1,75 @@
+@import 'responsive'
+
+.page-events
+	&__inner
+		padding-bottom: 80px
+		.page-events__wrap:nth-child(even)
+			.page-events__item:nth-child(2)
+				order: -1
+				+media(mdx)	
+					order: 0
+
+	&__text
+		max-width: 705px
+		margin: 0 auto
+		padding-bottom: 152px
+		+media(mdx)
+			max-width: 600px
+			padding-bottom: 60px
+		p
+			font-size: 20px
+			line-height: 1.5
+			color: #484848
+			font-family: MuseoSansCyrl
+			font-weight: 400
+
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+		margin: 0 -40px
+		padding-bottom: 55px
+		+media(mdx)	
+			margin: 0px
+			padding-bottom: 0px		
+
+	&__item
+		width: calc(100% / 2 - 80px)
+		margin: 0 40px
+		margin-bottom: 40px
+		+media(mdx)	
+			width: 100%
+			max-width: 600px
+			margin: 0 auto
+			margin-bottom: 40px
+		img
+			border-radius: 10px
+
+	&__subtitle
+		font-size: 40px
+		line-height: 1.25
+		color: #000000
+		padding-bottom: 18px
+		font-family: AngleciaProTitle
+		font-weight: 500
+		+media(mdx)
+			font-size: 30px	
+		+media(sm)
+			font-size: 25px
+
+	&__date
+		font-size: 24px
+		line-height: 1.25
+		color: #08acd2
+		padding-bottom: 35px
+		font-family: AngleciaProTitle
+		font-weight: 300
+
+	&__desc
+		p
+			font-size: 19px
+			line-height: 1.5
+			color: #636363
+			font-family: MuseoSansCyrl
+			font-weight: 100
+			&:not:last-child
+				padding-bottom: 1.6em

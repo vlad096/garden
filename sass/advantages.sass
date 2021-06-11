@@ -1,0 +1,84 @@
+@import 'responsive'
+
+.advantages
+	padding-bottom: 140px
+	+media(md)
+		padding-bottom: 100px
+	+media(sm)
+		padding-bottom: 70px
+	&__title
+		font-size: 70px
+		line-height: 1.2
+		color: #000000
+		font-weight: 400
+		text-align: center
+		padding-bottom: 35px	
+		font-family: BerlingskeSerif
+		+media(md)
+			font-size: 45px
+		+media(sm)
+			font-size: 33px
+		span
+			font-weight: 600
+			+media(md)
+				display: block
+				font-size: 42px
+			+media(sm)
+				font-size: 30px
+
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+		margin: 0 -40px
+		+media(sm)
+			margin: 0px
+
+
+	&__item
+		width: calc(100% / 3 - 80px)
+		margin: 0 40px
+		padding-bottom: 55px
+		+media(mdx)
+			width: calc(100% / 2 - 80px)
+		+media(sm)
+			width: 100%	
+			max-width: 450px
+			margin: 0 auto
+			padding-bottom: 30px
+
+	&__icon
+		max-width: 190px
+		min-height: 185px
+		max-height: 185px
+		margin: 0 auto
+		margin-bottom: 20px
+		+media(sm)
+			min-height: initial
+			max-height: initial
+		img
+			display: block
+			width: auto
+			height: auto
+
+	&__subtitle
+		font-size: 30px
+		line-height: 1.2
+		color: #000000
+		text-align: center
+		padding-bottom: 18px
+		font-family: AngleciaProTitle
+		font-weight: 500
+		+media(sm)
+			font-size: 22px
+			padding-bottom: 15px
+
+	&__text
+		p
+			font-size: 19px
+			line-height: 1.5
+			color: #636363
+			text-align: center
+			font-family: MuseoSansCyrl
+			font-weight: 400
+			+media(sm)
+				font-size: 18px

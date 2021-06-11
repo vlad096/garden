@@ -1,0 +1,42 @@
+@import 'responsive'
+
+.page-gallery
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+		margin: 0 -18px
+		padding-bottom: 120px
+		+media(sm)
+			margin: 0px	
+
+	&__item
+		width: calc(100% / 4 - 36px)
+		margin: 0 18px
+		margin-bottom: 52px
+		+media(lgxs)
+			width: calc(100% / 3 - 36px)
+		+media(lgxs)
+			width: calc(100% / 2 - 36px)
+		+media(sm)
+			width: 100%
+			max-width: 450px
+			margin: 0 auto
+			margin-bottom: 45px
+
+	&__image
+		cursor: pointer
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: top center
+		border-radius: 10px
+		padding-top: 84%
+		margin-bottom: 28px
+
+	&__subtitle
+		font-size: 26px
+		line-height: 1.2
+		color: #000000
+		font-family: AngleciaProTitle
+		font-weight: 500
+		+media(sm)
+			text-align: center

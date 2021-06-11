@@ -1,0 +1,383 @@
+@import 'responsive'
+
+.svg
+	position: absolute
+
+.main-header
+	position: relative
+	background-image: url(../img/bg-header.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: top center
+	margin-bottom: 57px
+	+media(mdx)
+		background-image: linear-gradient(to top, transparent, #fff  90%), url(../img/bg-header.jpg)
+	&--inner
+		+media(mdx)
+			background-image: linear-gradient(to top, transparent, #fff  20%), url(../img/bg-header.jpg)
+
+		.main-header__wrap
+			padding-bottom: 40px
+			+media(mdx)
+				padding: 0px
+	&+.about
+		padding-top: 120px
+		+media(md)
+			padding-top: 35px
+		+media(sm)
+			padding-top: 10px
+	&__inner
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+		position: relative
+		z-index: 3
+		padding-top: 25px
+		+media(lg)
+			justify-content: center
+		+media(mdx)
+			justify-content: space-between
+			padding: 0 20px
+
+	&__logo
+		max-width: 90px
+		margin-right: 80px
+		margin-bottom: 35px
+		+media(lg)
+			margin-right: 35px
+		+media(md)
+			margin-bottom: 42px
+
+	&__contacts
+		display: flex
+		margin: 0 -35px
+		padding-right: 50px
+		+media(lg)
+			flex-basis: 100%
+			order: 2
+			justify-content: center
+			padding-right: 0px
+		+media(mdx)
+			flex-direction: column
+			margin: 0px
+			align-items: center
+		.main-header__item:last-child
+			+media(mdx)
+				display: none
+
+	&__item
+		display: flex
+		margin: 0 35px
+		margin-bottom: 35px
+		+media(mdx)
+			margin: 0
+			margin-bottom: 20px
+
+	&__icon
+		min-width: 22px
+		margin-right: 11px
+		+media(mdx)
+			display: none
+		img
+			display: block
+
+	&__text
+		max-width: 365px
+		p
+			font-size: 16px
+			line-height: 1.5
+			font-family: MuseoSansCyrl
+			font-weight: 400
+			+media(mdx)
+				text-align: center
+
+	&__row
+		display: flex
+		margin: 0 -8px
+		margin-bottom: 35px
+		+media(lg)
+			padding-right: 25px
+		+media(mdx)
+			display: none
+
+	&__col
+		width: 35px
+		height: 35px
+		margin: 0 8px
+
+	&__tel
+		font-size: 26px
+		color: #000000
+		font-family: MuseoSansCyrl
+		font-weight: 800
+
+	&__time
+		font-size: 16px
+		line-height: 1.3
+		color: #909090
+		font-family: MuseoSansCyrl
+		font-weight: 400
+
+	&__call
+		cursor: pointer
+		display: block
+		max-width: 286px
+		width: 100%
+		font-size: 23px
+		color: #ffffff
+		box-shadow: inset 0 0 12px #d4291c
+		border: none
+		outline: none
+		border-radius: 31px
+		background-color: #ffffff
+		background-image: linear-gradient(to top, #b3160b 0%, #ef4437 100%)
+		text-align: center
+		padding: 15px 5px
+		margin-left: auto
+		margin-bottom: 35px
+		font-family: AngleciaProTitle
+		font-weight: 500
+		+media(lg)
+			margin-left: 0px
+		+media(mdx)
+			display: none
+
+	&__image
+		position: absolute
+		z-index: 1
+		bottom: -5px
+		right: 5%
+		+media(desc)
+			right: 0
+		+media(mdx)
+			left: 0
+			margin: 0 auto
+			max-width: 620px
+		+media(xs)
+			max-width: 350px
+		img
+			+media(mdx)
+				max-height: 420px
+				margin: 0 auto
+			+media(xs)
+				max-height: 240px
+				
+
+	&__wrap
+		flex-basis: 100%
+		order: 3
+		position: relative
+		z-index: 2
+		display: flex
+		justify-content: center
+		align-items: center
+		padding-bottom: 5px
+		+media(mdx)
+			flex-basis: auto
+			order: 1
+			position: static
+			padding-bottom: 0px
+			margin-bottom: 35px
+		+media(md)
+			flex-direction: column
+	
+	&__list
+		display: flex
+		position: relative
+		+media(mdx)
+			display: none
+			width: 100%
+			top: calc(100% - 110px)
+			left: 0
+			z-index: 2
+			position: absolute
+			padding-left: 0px	
+			max-height: calc(100vh - 70px)
+			background-color: #fff
+			overflow-y: auto
+			overflow-x: hidden
+			padding-bottom: 15px
+		li:not(:last-child)
+			margin-right: 65px
+			+media(lb)
+				margin-right: 55px
+			+media(lgxs)
+				margin-right: 38px
+			+media(mdx)
+				margin-right: 0px
+		li:first-child
+			.submenu
+				left: 0px
+			.submenu:before
+				left: 10%
+
+	&__link
+		font-size: 25px
+		line-height: 1.2	
+		display: block
+		color: #000000
+		font-family: AngleciaProTitle
+		font-weight: 500
+		transition: 0.3s background-color, 0.3s color
+		+media(lb)
+			font-size: 18px	
+		+media(mdx)
+			padding: 8px 20px
+		&:hover
+			color: #636363
+
+		&--active
+			color: #636363
+
+
+
+.mobile-wrap
+	display: none
+	align-items: center
+	justify-content: space-between
+	cursor: pointer
+	+media(mdx)
+		display: flex
+		width: 100%
+		padding: 10px 20px
+		padding-right: 0px
+
+.line-burger
+	display: block
+	position: absolute
+	top: 50%
+	left: 0
+	width: 25px
+	height: 3px
+	background-color: #02add5
+	transition: 0.5s width
+	&:after,
+	&:before
+		content: ''
+		position: absolute
+		width: 25px
+		height: 3px
+		background-color: #02add5
+		left: 0
+		transition: 0.5s
+	&:after
+		top: calc(100% + 5px)
+	&:before
+		bottom: calc(100% + 5px)
+
+.line-active
+	width: 0
+	&:after
+		top: 9px
+		transform: rotate(-45deg)
+		transform-origin: 0 0
+	&:before
+		bottom: 9px
+		transform: rotate(45deg)
+		transform-origin: 0 100%
+
+.main-nav__toggle
+	position: relative
+	cursor: pointer
+	display: none
+	width: 25px
+	height: 25px
+	+media(mdx)
+		display: block
+
+.submenu
+	position: absolute
+	z-index: 5
+	left: -75px
+	padding: 65px 50px
+	padding-bottom: 45px
+	opacity: 0
+	visibility: hidden
+	list-style-type: none
+	background-color: #fff
+	width: 350px
+	transition: 0.3s opacity, 0.3s visibility
+	border: 1px solid #02add5
+	background-color: #ffffff
+	+media(mdx)
+		border: none
+		position: relative
+		opacity: 1
+		visibility: visible
+		left: 0px
+		top: 0px
+		display: none
+		padding: 10px 20px
+		padding-left: 40px
+	&:before
+		position: absolute
+		z-index: 3
+		top: -3px
+		content: ' '
+		left: 50%
+		border-left: 1px solid #02add5
+		border-top: 1px solid #02add5
+		background-color: #fff
+		transform: rotate(45deg) translateX(-50%)
+		width: 16px
+		height: 16px
+		+media(mdx)
+			display: none
+	li 
+		&:not(:last-child)
+			margin-right: 0px
+			+media(lb)
+				margin-right: 0px
+		a
+			display: block
+			font-size: 21px
+			line-height: 1.2
+			padding-right: 0px
+			color: #000
+			font-family: AngleciaProTitle
+			margin-bottom: 17px
+			font-weight: 500
+			transition: 0.3s color
+			&:hover
+				color: #636363
+
+.dropdown-link
+	position: relative
+	padding-right: 25px
+	padding-bottom: 25px
+	&::after
+		position: absolute
+		content: ' '
+		top: 14px
+		right: 0px
+		width: 0px
+		height: 0px
+		border: 6px solid transparent
+		border-top: 6px solid #000000
+		pointer-events: none
+		transition: 0.3s border, 0.3s top, 0.3s bottom
+		+media(lb)
+			top: 9px
+		+media(mdx)
+			top: 14px	
+			right: 20px
+
+.dropdown
+	position: relative
+
+.dropdown, 
+.dropdown-link
+	&:hover 
+		.submenu
+			opacity: 1
+			visibility: visible
+
+		.dropdown-link:after
+			border-top-color: #636363
+			+media(mdx)	
+				border-top-color: #fff
+
+		.main-header__link
+			+media(mdx)	
+				color: #fff
+				background-color: #02add5

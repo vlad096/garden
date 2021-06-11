@@ -1,0 +1,26 @@
+.collections {
+	padding-top: 65px;
+	background-color: #4a4a4c;
+}
+
+.collections__title {
+	font-size: 48px;
+	line-height: 1;
+	color: #ffffff;
+	letter-spacing: 1.2px;
+	text-align: center;
+	padding-bottom: 40px;
+	font-family: Cuprum;
+	font-weight: 700;
+}
+
+.collections .info__number {
+	color: #6d6e6d;
+}
+
+.collections .info__subtitle,
+.collections .info__text p {
+	color: #c3c3c2;
+	text-decoration: none;
+}
+

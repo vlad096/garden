@@ -1,0 +1,81 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	min-height: 100vh;
+	overflow-x: hidden;
+	color: #333333;
+	background-color: #fff;
+	font-size: 16px;
+	line-height: 1.2;
+	font-weight: normal;
+	font-style: normal;
+	font-family: Cuprum;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.container {
+	max-width: 1460px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.container--inner {
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 0px;
+}
+
+.container--about {
+	max-width: 1120px;
+}
+
+.container--advantages {
+	max-width: 1300px;
+}
+
+.container--events {
+	max-width: 1300px;
+}
+
+.container--team {
+	max-width: 1315px;
+}
+
+.container--question {
+	max-width: 720px;
+}
+
+.container--lesson {
+	max-width: 1290px;
+}
+
+.container--page-events {
+	max-width: 1280px;
+}
+
+.container--desc {
+	max-width: 1130px;
+}
+
+.container--group {
+	max-width: 1300px;
+}
+
+@media screen and (max-width: 1050px) {
+
+.container--header {
+	padding: 0px;
+}
+
+}
+

@@ -1,0 +1,304 @@
+.group {
+	position: relative;
+	padding-bottom: 120px;
+}
+
+.group__image {
+	position: absolute;
+	z-index: -1;
+	top: -290px;
+	left: 0px;
+	max-width: 60%;
+}
+
+.group__title {
+	font-size: 65px;
+	line-height: 1.2;
+	padding-bottom: 70px;
+	color: #000000;
+	text-align: center;
+	font-family: BerlingskeSerif;
+	font-weight: 600;
+}
+
+.group__title span {
+	font-size: 70px;
+	line-height: 1.1;
+	font-family: BerlingskeSerif;
+	font-weight: 300;
+}
+
+.group__item {
+	display: flex;
+	flex-wrap: wrap;
+	box-shadow: 0 0 43px 14px rgba(4, 7, 29, 0.05);
+	border-radius: 15px;
+	background-color: #ffffff;
+	padding: 70px;
+	padding-top: 80px;
+	margin-bottom: 38px;
+}
+
+.group__block {
+	max-width: 270px;
+	width: 100%;
+	margin-right: 30px;
+}
+
+.group__subtitle {
+	font-size: 30px;
+	line-height: 1.5;
+	color: #000000;
+	padding-bottom: 15px;
+	font-family: AngleciaProTitle;
+	font-weight: 500;
+}
+
+.group__age {
+	font-size: 24px;
+	line-height: 1.25;
+	color: #03b3dc;
+	font-family: AngleciaProTitle;
+	font-weight: 300;
+}
+
+.group__text {
+	max-width: 505px;
+	padding-right: 40px;
+}
+
+.group__text p {
+	font-size: 18px;
+	line-height: 1.4;
+	color: #636363;
+	font-family: MuseoSansCyrl;
+	font-weight: 100;
+}
+
+.group__inner {
+	margin-left: auto;
+	max-width: 230px;
+	width: 100%;
+}
+
+.group__entry {
+	display: block;
+	cursor: pointer;
+	width: 100%;
+	position: relative;
+	color: #ffffff;
+	font-size: 21px;
+	box-shadow: inset 0 0 12px #d4291c;
+	border-radius: 29px;
+	color: #ffffff;
+	background-image: linear-gradient(to top, #d40e00 0%, #f83628 100%);
+	border: none;
+	outline: none;
+	padding: 16px 5px;
+	padding-left: 62px;
+	text-align: left;
+	margin-bottom: 15px;
+	font-family: AngleciaProTitle;
+	font-weight: 500;
+}
+
+.group__entry:after {
+	position: absolute;
+	content: ' ';
+	top: calc(50% - 11px);
+	left: 38px;
+	width: 12px;
+	height: 22px;
+	background-image: url(../img/icons/pen.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.group__details {
+	display: block;
+	font-size: 21px;
+	color: #747474;
+	border-radius: 29px;
+	border: 2px solid #888787;
+	background-color: #ffffff;
+	padding: 15px 15px;
+	text-align: center;
+	font-family: AngleciaProTitle;
+	font-weight: 500;
+	transition: 0.3s background-color, 0.3s color;
+}
+
+.group__details:hover {
+	background-color: #888787;
+	color: #fff;
+}
+
+.group__all {
+	display: block;
+	cursor: pointer;
+	max-width: 380px;
+	width: 100%;
+	position: relative;
+	font-size: 21px;
+	font-weight: 500;
+	color: #474747;
+	border-radius: 35px;
+	border: 2px solid #474747;
+	background-color: #ffffff;
+	outline: none;
+	margin: 0 auto;
+	padding: 19px 5px;
+	padding-left: 70px;
+	padding-bottom: 20px;
+	text-align: left;
+	font-family: AngleciaProTitle;
+	font-weight: 500;
+}
+
+.group__all:after {
+	position: absolute;
+	content: ' ';
+	top: calc(50% - 8px);
+	left: 45px;
+	width: 16px;
+	height: 16px;
+	background-image: url(../img/icons/all-icon.png);
+	background-repeat: no-repeat;
+}
+
+.group__all--lesson {
+	padding-left: 78px;
+}
+
+.group__all--lesson:after {
+	background-image: url(../img/icons/lesson.png);
+	background-size: cover;
+}
+
+@media screen and (max-width: 1350px) {
+
+.group__image {
+	display: none;
+}
+
+}
+
+@media screen and (max-width: 1150px) {
+
+.group__item {
+	padding: 50px 30px;
+}
+
+}
+
+@media screen and (max-width: 1050px) {
+
+.group__item {
+	padding: 35px 20px;
+}
+
+.group__block {
+	padding-bottom: 25px;
+}
+
+.group__text {
+	max-width: 100%;
+	padding-right: 0px;
+	padding-bottom: 25px;
+}
+
+.group__inner {
+	flex-basis: 100%;
+	order: 2;
+	max-width: 240px;
+	margin: 0;
+}
+
+}
+
+@media screen and (max-width: 960px) {
+
+.group {
+	padding-bottom: 80px;
+}
+
+.group__title {
+	font-size: 42px;
+	padding-bottom: 50px;
+}
+
+.group__title span {
+	font-size: 45px;
+}
+
+.group__subtitle {
+	font-size: 23px;
+}
+
+.group__age {
+	font-size: 20px;
+}
+
+.group__entry {
+	font-size: 19px;
+	padding: 15px 5px;
+	padding-left: 57px;
+	margin-bottom: 18px;
+}
+
+.group__entry:after {
+	left: 35px;
+}
+
+.group__details {
+	font-size: 19px;
+	padding: 14px 5px;
+}
+
+.group__all {
+	font-size: 16px;
+	margin-top: 10px;
+	padding: 15px 5px;
+	padding-left: 55px;
+}
+
+.group__all:after {
+	left: 33px;
+}
+
+.group__all--lesson {
+	padding-left: 55px;
+	margin-top: 5px;
+}
+
+.group__all--lesson:after {
+	width: 14px;
+	height: 14px;
+	left: 34px;
+	top: calc(50% - 7px);
+}
+
+}
+
+@media screen and (max-width: 780px) {
+
+.group {
+	padding-bottom: 65px;
+}
+
+.group__title {
+	font-size: 30px;
+	padding-bottom: 38px;
+}
+
+.group__title span {
+	display: block;
+	font-size: 33px;
+}
+
+.group__all {
+	max-width: 280px;
+}
+
+}
+

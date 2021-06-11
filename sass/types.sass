@@ -1,0 +1,144 @@
+@import 'responsive'
+
+.types
+	background-image: url(../img/pattern-types.jpg)
+	background-size: cover
+	background-repeat: no-repeat
+	padding-top: 130px
+	padding-bottom: 175px
+	margin-bottom: 75px
+	+media(md)
+		padding-bottom: 100px
+	+media(sm)
+		padding-bottom: 80px
+
+	&__title
+		font-size: 65px
+		line-height: 1
+		color: #000000
+		text-align: center
+		padding-bottom: 55px
+		font-family: BerlingskeSerif
+		font-weight: 300
+		+media(md)
+			font-size: 45px
+			padding-bottom: 45px
+		+media(sm)
+			font-size: 30px
+			padding-bottom: 35px
+		span
+			display: block
+			font-size: 70px
+			line-height: 1.1
+			font-family: BerlingskeSerif
+			font-weight: 600
+			+media(md)
+				font-size: 46px
+			+media(sm)
+				font-size: 31px
+
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+		margin: 0 -32px
+		+media(lb)
+			margin: 0 -18px
+		+media(sm)
+			margin: 0px
+
+	&__item
+		width: calc(100% / 3 - 64px)
+		margin: 0 32px
+		margin-bottom: 60px
+		box-shadow: 0 0 43px 14px rgba(4, 7, 29, 0.05)
+		border-radius: 15px
+		padding: 0 50px
+		padding-top: 55px
+		padding-bottom: 70px
+		background-color: #ffffff
+		+media(lb)
+			width: calc(100% / 3 - 36px)
+			margin: 0 18px
+			margin-bottom: 60px
+			padding: 0 35px
+			padding-top: 40px
+			padding-bottom: 50px
+		+media(mdx)
+			padding-left: 20px
+			padding-right: 20px
+		+media(md)
+			width: calc(100% / 2 - 36px)
+			margin-bottom: 45px
+		+media(sm)
+			width: 100%
+			max-width: 450px
+			padding: 0 40px
+			padding-top: 30px
+			padding-bottom: 28px
+			margin: 0 auto
+			margin-bottom: 30px
+
+	&__image
+		max-height: 190px
+		min-height: 190px
+		height: 190px
+		margin-bottom: 8px
+		img
+			display: block
+			height: 100%
+			object-fit: contain
+			margin: 0 auto
+
+	&__subtitle
+		font-size: 34px
+		line-height: 1.2
+		color: #000000
+		padding-bottom: 20px
+		font-family: AngleciaProTitle
+		font-weight: 500
+		+media(md)
+			font-size: 28px
+			padding-bottom: 16px
+		+media(sm)
+			font-size: 23px
+			padding-bottom: 14px
+
+	&__age
+		font-size: 24px
+		line-height: 1.25
+		color: #08acd2
+		padding-bottom: 18px
+		font-family: AngleciaProTitle
+		font-weight: 300
+		+media(md)
+			font-size: 22px
+			padding-bottom: 16px
+		+media(sm)
+			font-size: 20px
+
+	&__text
+		font-size: 19px
+		line-height: 1.5
+		color: #636363
+		padding-bottom: 33px
+		font-family: MuseoSansCyrl
+		font-weight: 100
+		+media(md)
+			font-size: 18px
+			padding-bottom: 24px
+		+media(sm)
+			padding-bottom: 22px
+
+	.group__entry,
+	.group__details
+		max-width: 230px
+		margin: 0 auto
+		+media(md)
+			margin-bottom: 16px
+
+	.group__entry
+		box-shadow: inset 1px -4px 3px rgba(0, 0, 0, 0.2), inset 0 0 12px #018eaf
+		background-image: linear-gradient(to top, #017793 0%, #04b0d8 100%)
+		margin-bottom: 20px
+
+		
